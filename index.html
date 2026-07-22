@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Shubham Srivastava, a Computer Science Engineering student at Woxsen University."
+    />
+    <title>Shubham Srivastava | Portfolio</title>
+
+    <!-- Typography is loaded from Google Fonts; no UI framework is used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- The skip link lets keyboard users reach the main content quickly. -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Shubham Srivastava home">
+          <span class="brand-mark" aria-hidden="true">SS</span>
+          <span class="brand-name">Shubham Srivastava</span>
+        </a>
+
+        <!-- These links are prepared now; their matching sections arrive in Phase 2. -->
+        <ul class="nav-links" aria-label="Portfolio sections">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certificates</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to light theme"
+          aria-pressed="false"
+        >
+          <!-- The icon changes with the selected theme in Phase 5. -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M12 3v2m0 14v2M3 12h2m14 0h2m-2.64-6.36-1.41 1.41M7.05 16.95l-1.41 1.41m0-12.72 1.41 1.41m9.9 9.9 1.41 1.41M15.5 12a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            />
+          </svg>
+          <span class="sr-only">Toggle colour theme</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">B.Tech CSE Student | Woxsen University</p>
+          <h1 id="hero-title">
+            Building thoughtful digital experiences, one line of code at a time.
+          </h1>
+          <p class="hero-description">
+            I'm Shubham Srivastava, a first-year Computer Science Engineering student
+            exploring web development, problem-solving, and modern product design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work</a>
+            <a class="button button-secondary" href="#contact">Let's connect</a>
+          </div>
+        </div>
+
+        <aside class="hero-status" aria-label="Current learning focus">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <div>
+            <p class="status-label">Currently learning</p>
+            <p class="status-value">Web development fundamentals</p>
+          </div>
+        </aside>
+
+        <a class="scroll-prompt" href="#about">
+          <span>Scroll to discover</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="m6 9 6 6 6-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            />
+          </svg>
+        </a>
+      </section>
+
+      <!-- About: introduces the person behind the portfolio. -->
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <header class="section-header">
+          <p class="section-badge">01 / About me</p>
+          <h2 id="about-title">Curious about the ideas that shape tomorrow.</h2>
+          <p class="section-subtitle">
+            A first-year student building a strong foundation in computer science while
+            exploring technology with purpose.
+          </p>
+        </header>
+
+        <div class="about-content">
+          <figure class="profile-card">
+            <div class="profile-image-placeholder" aria-hidden="true">
+              <span>SS</span>
+              <p>Professional photo placeholder</p>
+            </div>
+            <figcaption>Add a clear professional photograph before publishing.</figcaption>
+          </figure>
+
+          <div class="about-details">
+            <article class="glass-card about-introduction">
+              <h3>Introduction</h3>
+              <p>
+                I'm Shubham Srivastava, a B.Tech Computer Science Engineering student at
+                Woxsen University. I enjoy learning how thoughtful software can turn
+                ambitious ideas into useful digital experiences.
+              </p>
+            </article>
+
+            <article class="glass-card career-objective-card">
+              <h3>Career objective</h3>
+              <p>
+                To grow into a capable software engineer by strengthening my programming
+                fundamentals, building meaningful projects, and contributing to technology
+                that creates a positive impact.
+              </p>
+            </article>
+
+            <article class="glass-card interests-card">
+              <h3>Areas of interest</h3>
+              <ul class="interest-list">
+                <li>Artificial Intelligence</li>
+                <li>Web Development</li>
+                <li>Space Technology</li>
+                <li>Software Engineering</li>
+                <li>Problem Solving</li>
+                <li>Open Source</li>
+              </ul>
+            </article>
+
+            <dl class="quick-facts" aria-label="Quick facts about Shubham Srivastava">
+              <div class="quick-fact">
+                <dt>University</dt>
+                <dd>Woxsen University</dd>
+              </div>
+              <div class="quick-fact">
+                <dt>Programme</dt>
+                <dd>B.Tech CSE</dd>
+              </div>
+              <div class="quick-fact">
+                <dt>Year</dt>
+                <dd>First year</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education: an ordered timeline communicates chronological progress. -->
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <header class="section-header">
+          <p class="section-badge">02 / Education</p>
+          <h2 id="education-title">Learning with intention.</h2>
+          <p class="section-subtitle">
+            My academic foundation and the next chapter of my learning journey.
+          </p>
+        </header>
+
+        <ol class="education-timeline">
+          <li class="timeline-item timeline-item--current">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card glass-card">
+              <p class="timeline-date">2026 - Present</p>
+              <h3>B.Tech Computer Science Engineering</h3>
+              <p class="timeline-institution">Woxsen University</p>
+              <p>
+                Building core knowledge in programming, computational thinking, and modern
+                software development practices.
+              </p>
+              <span class="timeline-status">Currently pursuing</span>
+            </article>
+          </li>
+          <li class="timeline-item timeline-item--placeholder">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card glass-card">
+              <p class="timeline-date">Add previous qualification</p>
+              <h3>Higher secondary education</h3>
+              <p class="timeline-institution">Add school name and board before publishing</p>
+              <p>
+                This placeholder keeps the timeline complete without inventing academic
+                details. Replace it with your verified Class XII information.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Skills: six consistent cards are ready for future progress and reveal animations. -->
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <header class="section-header">
+          <p class="section-badge">03 / Skills</p>
+          <h2 id="skills-title">Growing a balanced technical toolkit.</h2>
+          <p class="section-subtitle">
+            An honest snapshot of the concepts and tools I am currently learning.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card" data-skill-category="programming">
+            <p class="skill-card-index" aria-hidden="true">01</p>
+            <h3>Programming languages</h3>
+            <ul class="skill-chip-list" aria-label="Programming languages">
+              <li class="skill-chip" data-skill="c" data-level="50">C</li>
+              <li class="skill-chip" data-skill="python" data-level="60">Python</li>
+              <li class="skill-chip skill-chip--learning" data-skill="java" data-level="25">Java (Learning)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card" data-skill-category="web-development">
+            <p class="skill-card-index" aria-hidden="true">02</p>
+            <h3>Web development</h3>
+            <ul class="skill-chip-list" aria-label="Web development skills">
+              <li class="skill-chip" data-skill="html" data-level="75">HTML5</li>
+              <li class="skill-chip" data-skill="css" data-level="65">CSS3</li>
+              <li class="skill-chip" data-skill="javascript" data-level="40">JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card" data-skill-category="tools">
+            <p class="skill-card-index" aria-hidden="true">03</p>
+            <h3>Tools &amp; platforms</h3>
+            <ul class="skill-chip-list" aria-label="Tools and platforms">
+              <li class="skill-chip" data-skill="git" data-level="45">Git</li>
+              <li class="skill-chip" data-skill="github" data-level="45">GitHub</li>
+              <li class="skill-chip" data-skill="vs-code" data-level="70">VS Code</li>
+              <li class="skill-chip skill-chip--learning" data-skill="linux" data-level="30">Linux (Basic)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card" data-skill-category="computer-science">
+            <p class="skill-card-index" aria-hidden="true">04</p>
+            <h3>Core CS subjects</h3>
+            <ul class="skill-chip-list" aria-label="Core computer science subjects">
+              <li class="skill-chip skill-chip--learning" data-skill="dsa" data-level="25">Data Structures &amp; Algorithms (Learning)</li>
+              <li class="skill-chip" data-skill="oop" data-level="35">Object-Oriented Programming</li>
+              <li class="skill-chip" data-skill="dbms" data-level="25">Database Management Systems</li>
+              <li class="skill-chip" data-skill="operating-systems" data-level="20">Operating Systems</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card" data-skill-category="soft-skills">
+            <p class="skill-card-index" aria-hidden="true">05</p>
+            <h3>Soft skills</h3>
+            <ul class="skill-chip-list" aria-label="Soft skills">
+              <li class="skill-chip" data-skill="leadership" data-level="55">Leadership</li>
+              <li class="skill-chip" data-skill="teamwork" data-level="65">Teamwork</li>
+              <li class="skill-chip" data-skill="communication" data-level="55">Communication</li>
+              <li class="skill-chip" data-skill="problem-solving" data-level="65">Problem Solving</li>
+              <li class="skill-chip" data-skill="time-management" data-level="60">Time Management</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass-card" data-skill-category="currently-learning">
+            <p class="skill-card-index" aria-hidden="true">06</p>
+            <h3>Currently learning</h3>
+            <ul class="skill-chip-list" aria-label="Currently learning">
+              <li class="skill-chip skill-chip--learning" data-skill="react" data-level="20">React</li>
+              <li class="skill-chip skill-chip--learning" data-skill="node-js" data-level="15">Node.js</li>
+              <li class="skill-chip skill-chip--learning" data-skill="machine-learning" data-level="15">AI &amp; Machine Learning</li>
+              <li class="skill-chip skill-chip--learning" data-skill="competitive-programming" data-level="20">Competitive Programming</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects: each card has a predictable structure for future hover interactions. -->
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <header class="section-header">
+          <p class="section-badge">04 / Projects</p>
+          <h2 id="projects-title">Learning by making.</h2>
+          <p class="section-subtitle">
+            A starter project collection that will grow as I continue to learn and build.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <figure class="project-preview project-preview--portfolio">
+              <div class="project-image-placeholder" aria-hidden="true">Portfolio preview</div>
+              <figcaption>Project preview placeholder</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-status">In progress</p>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A responsive portfolio designed to present my learning journey, skills,
+                projects, and professional goals.
+              </p>
+              <ul class="technology-list" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" disabled>GitHub coming soon</button>
+                <button class="project-link" type="button" disabled>Live demo coming soon</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <figure class="project-preview project-preview--tasks">
+              <div class="project-image-placeholder" aria-hidden="true">Task manager preview</div>
+              <figcaption>Planned practice project</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-status">Planned learning project</p>
+              <h3>FocusFlow Task Manager</h3>
+              <p>
+                A simple task manager concept for practising DOM manipulation, local storage,
+                and practical user-interface design.
+              </p>
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" disabled>GitHub coming soon</button>
+                <button class="project-link" type="button" disabled>Live demo coming soon</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <figure class="project-preview project-preview--weather">
+              <div class="project-image-placeholder" aria-hidden="true">Weather app preview</div>
+              <figcaption>Planned practice project</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-status">Planned learning project</p>
+              <h3>Weather Dashboard</h3>
+              <p>
+                A weather dashboard concept for learning how to fetch and present real-time
+                data from a public API.
+              </p>
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" disabled>GitHub coming soon</button>
+                <button class="project-link" type="button" disabled>Live demo coming soon</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <figure class="project-preview project-preview--quiz">
+              <div class="project-image-placeholder" aria-hidden="true">Quiz app preview</div>
+              <figcaption>Planned practice project</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-status">Planned learning project</p>
+              <h3>QuizSphere</h3>
+              <p>
+                An interactive quiz concept intended to practise arrays, events, score
+                tracking, and friendly feedback for users.
+              </p>
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <button class="project-link" type="button" disabled>GitHub coming soon</button>
+                <button class="project-link" type="button" disabled>Live demo coming soon</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications: intentionally honest placeholders prevent unverified claims. -->
+      <section
+        class="section certifications-section"
+        id="certifications"
+        aria-labelledby="certifications-title"
+      >
+        <header class="section-header">
+          <p class="section-badge">05 / Certifications</p>
+          <h2 id="certifications-title">Evidence of continuous learning.</h2>
+          <p class="section-subtitle">
+            Add only verified credentials here as you complete recognised learning pathways.
+          </p>
+        </header>
+
+        <div class="certifications-grid">
+          <article class="certification-card glass-card certification-card--placeholder">
+            <p class="certification-status">Credential placeholder</p>
+            <h3>Web Development Foundation</h3>
+            <dl class="credential-details">
+              <div><dt>Issuer</dt><dd>Add verified issuer</dd></div>
+              <div><dt>Date</dt><dd>Add completion date</dd></div>
+              <div><dt>Credential</dt><dd>Add verification link</dd></div>
+            </dl>
+          </article>
+          <article class="certification-card glass-card certification-card--placeholder">
+            <p class="certification-status">Credential placeholder</p>
+            <h3>Git and GitHub Fundamentals</h3>
+            <dl class="credential-details">
+              <div><dt>Issuer</dt><dd>Add verified issuer</dd></div>
+              <div><dt>Date</dt><dd>Add completion date</dd></div>
+              <div><dt>Credential</dt><dd>Add verification link</dd></div>
+            </dl>
+          </article>
+          <article class="certification-card glass-card certification-card--placeholder">
+            <p class="certification-status">Credential placeholder</p>
+            <h3>Python Programming Essentials</h3>
+            <dl class="credential-details">
+              <div><dt>Issuer</dt><dd>Add verified issuer</dd></div>
+              <div><dt>Date</dt><dd>Add completion date</dd></div>
+              <div><dt>Credential</dt><dd>Add verification link</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- Achievements: timeline milestones show progress without overstating experience. -->
+      <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+        <header class="section-header">
+          <p class="section-badge">06 / Achievements</p>
+          <h2 id="achievements-title">Small milestones, meaningful momentum.</h2>
+          <p class="section-subtitle">
+            A record of the learning habits and progress that are shaping my journey.
+          </p>
+        </header>
+
+        <ol class="achievements-timeline">
+          <li class="achievement-item">
+            <article class="achievement-card glass-card">
+              <p class="achievement-date">2026</p>
+              <h3>Started B.Tech in Computer Science Engineering</h3>
+              <p>Began my academic journey at Woxsen University.</p>
+            </article>
+          </li>
+          <li class="achievement-item">
+            <article class="achievement-card glass-card">
+              <p class="achievement-date">2026</p>
+              <h3>Built my first professional portfolio</h3>
+              <p>Created a dedicated space to document my work, learning, and aspirations.</p>
+            </article>
+          </li>
+          <li class="achievement-item">
+            <article class="achievement-card glass-card">
+              <p class="achievement-date">Now</p>
+              <h3>Strengthening web development fundamentals</h3>
+              <p>Learning HTML, CSS, JavaScript, Git, and GitHub through practical projects.</p>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Roadmap: presents a clear, forward-looking professional direction. -->
+      <section class="section roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+        <header class="section-header">
+          <p class="section-badge">07 / Career roadmap</p>
+          <h2 id="roadmap-title">A direction, not a deadline.</h2>
+          <p class="section-subtitle">
+            The milestones I intend to pursue as I develop from learner to contributor.
+          </p>
+        </header>
+
+        <ol class="roadmap-list">
+          <li class="roadmap-step"><span class="roadmap-number">01</span><h3>Learn programming fundamentals</h3></li>
+          <li class="roadmap-step"><span class="roadmap-number">02</span><h3>Build useful projects</h3></li>
+          <li class="roadmap-step"><span class="roadmap-number">03</span><h3>Contribute to open source</h3></li>
+          <li class="roadmap-step"><span class="roadmap-number">04</span><h3>Gain internship experience</h3></li>
+          <li class="roadmap-step"><span class="roadmap-number">05</span><h3>Grow as a software engineer</h3></li>
+          <li class="roadmap-step"><span class="roadmap-number">06</span><h3>Explore AI research</h3></li>
+        </ol>
+      </section>
+
+      <!-- Contact: combines real available contact information with a future-ready form. -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <header class="section-header">
+          <p class="section-badge">08 / Contact</p>
+          <h2 id="contact-title">Let's start a conversation.</h2>
+          <p class="section-subtitle">
+            Whether you want to discuss ideas, learning, or future opportunities, I would be
+            glad to connect.
+          </p>
+        </header>
+
+        <div class="contact-content">
+          <address class="contact-details glass-card">
+            <h3>Contact information</h3>
+            <p>Update the email address below before publishing this portfolio.</p>
+            <dl class="contact-list">
+              <div>
+                <dt>Email</dt>
+                <dd>Add your professional email</dd>
+              </div>
+              <div>
+                <dt>University</dt>
+                <dd>Woxsen University</dd>
+              </div>
+              <div>
+                <dt>Availability</dt>
+                <dd>Open to learning and collaboration</dd>
+              </div>
+            </dl>
+
+            <div class="social-links" aria-label="Professional social links">
+              <a
+                href="https://www.linkedin.com/in/shubham-srivastava-a8174b323/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <span class="social-link-placeholder">Add GitHub profile link</span>
+            </div>
+          </address>
+
+          <form class="contact-form glass-card" action="#" method="post">
+            <h3>Send a message</h3>
+            <p class="form-note">Form validation and submission handling will be added in Phase 5.</p>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer: completes the document and provides a return path to the top. -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>Designed and developed by Shubham Srivastava.</p>
+        <p>&copy; 2026 Shubham Srivastava. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/shubham-srivastava-a8174b323/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#home">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
