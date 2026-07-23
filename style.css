@@ -915,44 +915,50 @@ main {
   box-shadow: var(--shadow-card);
 }
 
-.profile-image-placeholder {
-  position: relative;
-  display: grid;
-  min-height: 26rem;
-  place-content: center;
-  gap: var(--space-2);
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 25% 20%, rgba(124, 58, 237, 0.32), transparent 35%),
-    radial-gradient(circle at 75% 80%, rgba(37, 99, 235, 0.22), transparent 38%),
-    var(--bg-elevated);
-  text-align: center;
+.profile-card{
+
+    overflow:hidden;
+
 }
 
-.profile-image-placeholder::before {
-  position: absolute;
-  inset: 12%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  content: "";
+.profile-image{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    object-position:center 18%;
+
+    border-radius:22px;
+
+    transition:transform .45s ease;
+
 }
 
-.profile-image-placeholder span {
-  position: relative;
-  z-index: var(--z-content);
-  display: grid;
-  width: 7rem;
-  aspect-ratio: 1;
-  place-items: center;
-  margin-inline: auto;
-  border: 1px solid var(--border-strong);
-  border-radius: 50%;
-  background: rgba(10, 10, 10, 0.32);
-  color: var(--text-primary);
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: var(--font-weight-bold);
-  letter-spacing: var(--letter-spacing-tight);
+.profile-card:hover .profile-image{
+
+    transform:scale(1.04);
+
+}
+
+.profile-card figcaption{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:.92rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:var(--text-secondary);
+
 }
 
 .profile-image-placeholder p {
